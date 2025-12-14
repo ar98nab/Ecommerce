@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: '*',
+    origin: 'https://spiffy-gingersnap-888845.netlify.app/',
     credentials: true,
   })
 );
