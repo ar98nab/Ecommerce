@@ -43,7 +43,7 @@ const OrdersPage = () => {
     setError('');
     try {
       const { data } = await axios.post(
-        'http://localhost:5000/api/orders',
+        'https://bringit-0vs9.onrender.com/api/orders',
         {
           orderItems: cartItems.map((item) => ({
             name: item.name,
@@ -82,7 +82,7 @@ const OrdersPage = () => {
     setCancelSuccess('');
     try {
       const { data } = await axios.patch(
-        `http://localhost:5000/api/orders/${id}/cancel`,
+        `https://bringit-0vs9.onrender.com/api/orders/${id}/cancel`,
         {},
         {
           headers: { Authorization: `Bearer ${userInfo.token}` },

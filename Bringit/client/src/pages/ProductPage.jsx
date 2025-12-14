@@ -62,7 +62,7 @@ const ProductPage = () => {
     setSaveMsg('');
     try {
       const { data } = await axios.put(
-        `http://localhost:5000/api/products/${id}`,
+        `https://bringit-0vs9.onrender.com/api/products/${id}`,
         {
           name: product.name,
           image: product.image,
@@ -93,7 +93,7 @@ const ProductPage = () => {
     if (!window.confirm('Remove this product permanently?')) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/products/${id}`, {
+      await axios.delete(`https://bringit-0vs9.onrender.com/api/products/${id}`, {
         headers: {
           Authorization: `Bearer ${userInfo.token}`,
         },
