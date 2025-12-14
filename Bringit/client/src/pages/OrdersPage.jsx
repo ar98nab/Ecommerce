@@ -24,7 +24,7 @@ const OrdersPage = () => {
     if (!userInfo) return;
     try {
       const { data } = await axios.get(
-        'http://localhost:5000/api/orders/myorders',
+        'https://bringit-0vs9.onrender.com/api/orders/myorders',
         {
           headers: { Authorization: `Bearer ${userInfo.token}` },
         }

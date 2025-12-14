@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: 'http://localhost:5173',
+    origin: '*',
     credentials: true,
   })
 );
@@ -25,7 +25,7 @@ app.use(
 connectDB();
 
 app.get('/', (req, res) => {
-  res.send('Bringit API is running with RBAC...');
+  res.send('Bringit API is running...');
 });
 
 app.use('/api/auth', authRoutes);

@@ -50,7 +50,7 @@ const AddProductPage = () => {
         countInStock: Number(form.countInStock),
       };
       const { data } = await axios.post(
-        'http://localhost:5000/api/products',
+        'https://bringit-0vs9.onrender.com/api/products',
         payload,
         {
           headers: {

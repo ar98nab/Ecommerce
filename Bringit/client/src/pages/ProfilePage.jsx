@@ -21,7 +21,7 @@ const ProfilePage = () => {
     const fetchProfile = async () => {
       try {
         const { data } = await axios.get(
-          'http://localhost:5000/api/auth/profile',
+          'https://bringit-0vs9.onrender.com/api/auth/profile',
           {
             headers: {
               Authorization: `Bearer ${userInfo.token}`,

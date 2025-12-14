@@ -54,7 +54,7 @@ const CartPage = () => {
 
     try {
       const { data } = await axios.post(
-        'http://localhost:5000/api/payment/razorpay-order',
+        'https://bringit-0vs9.onrender.com/api/payment/razorpay-order',
         {
           amount: total,
         }

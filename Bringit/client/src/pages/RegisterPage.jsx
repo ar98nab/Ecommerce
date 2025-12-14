@@ -21,7 +21,7 @@ const RegisterPage = () => {
     setError('');
     try {
       const { data } = await axios.post(
-        'http://localhost:5000/api/auth/register',
+        'https://bringit-0vs9.onrender.com/api/auth/register',
         { name, email, password, role }
       );
       login(data);

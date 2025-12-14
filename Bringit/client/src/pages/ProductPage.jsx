@@ -26,7 +26,7 @@ const ProductPage = () => {
   const fetchProduct = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/products/${id}`
+        `https://bringit-0vs9.onrender.com/api/products/${id}`
       );
       setProduct(data);
       if (data.countInStock < qty) {

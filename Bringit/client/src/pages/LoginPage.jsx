@@ -18,7 +18,7 @@ const LoginPage = () => {
     setLoading(true);
     setError('');
     try {
-      const { data } = await axios.post('http://localhost:5000/api/auth/login', {
+      const { data } = await axios.post('https://bringit-0vs9.onrender.com/api/auth/login', {
         email,
         password,
       });
