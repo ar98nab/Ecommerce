@@ -127,8 +127,8 @@ client/
 └── vite.config.js
 
 mongodb_url="mongodb+srv://adutta441:arnab@cluster0.j2gr0i5.mongodb.net/"
-Backend_Deploylink=""
-Frontend_Deploylink=""
+Backend_Deploylink="https://bringit-0vs9.onrender.com"
+Frontend_Deploylink="https://bringit2025.netlify.app/"
 
 
 
